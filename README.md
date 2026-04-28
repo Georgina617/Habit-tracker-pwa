@@ -36,7 +36,7 @@ Track your daily habits, build streaks, and stay consistent — even without an 
 Clone the repository:
 
 ```bash
-git clone https://github.com/georgina617/habit-tracker-pwa.git
+git clone https://github.com/georgina617/Habit-tracker-pwa.git
 cd habit-tracker-pwa
 ```
 
