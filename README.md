@@ -1,36 +1,147 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Habit Tracker PWA
 
-## Getting Started
+A modern, offline-first Habit Tracker built with Next.js, TypeScript, and Tailwind CSS.
+Track your daily habits, build streaks, and stay consistent — even without an internet connection.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- 🔐 Authentication (Signup & Login)
+- ✅ Create, edit, and delete habits
+- 🔁 Toggle daily completion
+- 🔥 Streak tracking system
+- 🔍 Search and filter habits
+- 📅 Calendar view for activity tracking
+- 💾 Local storage persistence
+- 📱 Progressive Web App (PWA)
+- 🌐 Offline support (dashboard works without internet)
+- 🧪 Unit & Integration testing (Vitest + Testing Library)
+
+---
+
+## 🧠 Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **State/Data:** LocalStorage
+- **Testing:** Vitest + React Testing Library
+- **PWA:** Service Worker + Manifest
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/georgina617/habit-tracker-pwa.git
+cd habit-tracker-pwa
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧪 Running Tests
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run test
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📱 PWA Support
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This app is fully installable and works offline.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Features:
 
-## Deploy on Vercel
+- App can be installed on mobile/desktop
+- Dashboard loads offline
+- Cached assets via service worker
+- Manifest for splash screen and icons
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📴 Offline Capability
+
+- Dashboard is cached and accessible without internet
+- Habit data persists via LocalStorage
+- Service Worker handles caching and fallback logic
+
+---
+
+## 📁 Project Structure
+
+```bash
+/src
+  /app
+  /components
+    /auth
+    /habits
+    /shared
+  /lib
+  /types
+/tests
+/public
+  /icons
+  manifest.json
+  sw.js
+```
+
+---
+
+## 🧩 Key Functionality
+
+- **Habit Completion Toggle**
+- **Immutable Data Updates**
+- **Streak Calculation Logic**
+- **Protected Routes**
+- **Search Filtering**
+
+---
+
+## ⚠️ Notes
+
+- Service Worker is optimized for production use
+- In development mode, caching for `_next` files is disabled
+- Always test offline functionality using production build:
+
+```bash
+npm run build
+npm run start
+```
+
+---
+
+## 🚀 Deployment
+
+You can deploy this app using:
+
+- Vercel (recommended)
+- Netlify
+- GitHub Pages (with adaptation)
+
+---
+
+## 👤 Author
+
+Built by **Georgina odusanya**
+
+---
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
